@@ -14,7 +14,7 @@ class KategoriNode:
         hasil = f"{indentasi}{simbol}{self.nama}\n"
         
         for sub in self.sub_kategori:
-           hasil = {indentasi}{simbol}{self.nama}
+           hasil = f"{indentasi}{simbol}{self.nama}"
         return hasil
 
     def cari_node(self, target_nama):
