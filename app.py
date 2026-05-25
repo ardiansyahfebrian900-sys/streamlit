@@ -13,7 +13,7 @@ class KategoriNode:
         simbol = "↳ " if level > 0 else " + "
         hasil = f"{indentasi}{simbol}{self.nama}\n"
         
-        for sub in self.sub_kategori:
+        for sub in self.z   :
            hasil += sub.dapatkan_tree_string(level + 1)
            return hasil
 
@@ -77,7 +77,7 @@ if st.session_state.root is None:
             induk_nama = st.text_input("nama kategori induk tempat cabang ditambahkan")
             anak_nama = st.text_input("nama sub-kategori baru:")
 
-            if st.button("tambah kategori")
+            if st.button("tambah kategori"):
                 if induk_nama and anak_nama:
                     induk_node = root.cari_node(induk_nama)
                     if induk_node:
