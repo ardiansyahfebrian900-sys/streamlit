@@ -13,7 +13,7 @@ class KategoriNode:
         simbol = "↳ " if level > 0 else " + "
         hasil = f"{indentasi}{simbol}{self.nama}\n"
         
-        for sub in self.z   :
+        for sub in self.sub_kategori:
            hasil = sub.dapatkan_tree_string(level + 1)
         return hasil
 
