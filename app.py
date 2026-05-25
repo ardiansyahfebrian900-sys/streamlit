@@ -14,8 +14,8 @@ class KategoriNode:
         hasil = f"{indentasi}{simbol}{self.nama}\n"
         
         for sub in self.z   :
-           hasil += sub.dapatkan_tree_string(level + 1)
-           return hasil
+           hasil = sub.dapatkan_tree_string(level + 1)
+        return hasil
 
     def cari_node(self, target_nama):
         # Mencari node spesifik untuk menambahkan anak di bawahnya
